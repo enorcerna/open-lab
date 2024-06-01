@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "OpenLab",
+  "version": "0.0.1",
+  "icons": {
+    "48": "logo.png"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "src/content/index.tsx"
+      ],
+      "matches": [
+        "https://www.scopus.com/record/*"
+      ]
+    }
+  ],
+  "permissions": [
+    "scripting",
+    "tabs",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ]
+}
