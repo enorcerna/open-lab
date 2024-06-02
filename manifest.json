@@ -3,7 +3,7 @@
   "name": "OpenLab",
   "version": "0.0.1",
   "icons": {
-    "48": "logo.png"
+    "48": "logo-off.png"
   },
   "action": {
     "default_popup": "index.html"
